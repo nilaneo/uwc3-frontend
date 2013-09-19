@@ -116,7 +116,7 @@ textarea {
     background: -ms-linear-gradient(left, #79c200, #439b00); 
     background: linear-gradient(left, #79c200, #439b00); 
     transition: width .2s;
-    
+    cursor: pointer;
 }
 
 .support-button-hidden {
