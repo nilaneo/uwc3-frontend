@@ -21,10 +21,48 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->        
-        <div class="support-button">технічна підтримка</div>
+        <!-- Add your site or application content here -->
+
+        <a href="/">
+            <div class="support-button">
+                <img src="img/tip.gif">
+                <p class="rotated-text">технічна підтримка</p>
+            </div>
+        </a>
+
         <div class="support-window">
-            <div class="support-window__content"></div>
+            <h1 class="support-window__header"><img src="img/tip.gif">Технічна підтримка слухає...</h1>
+            <button class="button-close">завершити чат</button>
+            <div class="support-window__chat">
+            </div>
+            <div class="support-window__content">
+                <div class="message-support">
+                    <div class="message-support__header">
+                        <strong>Підтримка</strong> (2.10.2012: 15:35):
+                    </div>
+                    <div class="message">Доброго дня, чим можу допомогти?</div>
+                </div>
+                <div class="message-user">
+                    <div class="message-user__header">
+                        <strong>Ви</strong> (26.10.2012: 15:36):
+                    </div>                            
+                    <div class="message">У мене не працює утюг. Чи зв’язано це з тим, що на Марсі погана погода?</div>
+                    <a href="/" class="include-file">погода.doc</a>
+                </div>
+                <div class="message-support">
+                    <div class="message-support__header">
+                        <strong>Підтримка</strong> (26.10.2012: 15:39):
+                    </div>
+                    <div class="message">Перезапустіть ваш утюг... Повинно допомогти :)</div>
+                </div>                        
+                <textarea name="text" class="message-input">Перезапустив, допомогло, дякую.</textarea>
+                <div class="support-window__footer">
+                    <img src="" alt="">
+                    <a href="/">вкласти файл</a>
+                    
+                    <button class="button-send">надіслати</button>                    
+                </div>
+            </div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
