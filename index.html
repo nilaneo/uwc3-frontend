@@ -29,39 +29,46 @@
         </div>
 
         <div class="support-window">
-            <h1 class="support-window__header"><img src="img/tip.gif">Технічна підтримка слухає...</h1>
-            <button class="button-close">завершити чат</button>
-            <div class="support-window__chat">
+            <div class="support-window__header">
+                <h1 class="support-window__header__title"><img src="img/tip.gif">Технічна підтримка слухає...</h1>
+                <button class="button-close">завершити чат</button>
             </div>
             <div class="support-window__content">
-                <div class="message-support">
-                    <div class="message-support__header">
-                        <strong>Підтримка</strong> (2.10.2012: 15:35):
-                    </div>
-                    <div class="message">Доброго дня, чим можу допомогти?</div>
-                </div>
-                <div class="message-user">
-                    <div class="message-user__header">
-                        <strong>Ви</strong> (26.10.2012: 15:36):
-                    </div>                            
-                    <div class="message">У мене не працює утюг. Чи зв’язано це з тим, що на Марсі погана погода?</div>
-                    <a href="#" class="include-file">погода.doc</a>
-                </div>
-                <div class="message-support">
-                    <div class="message-support__header">
-                        <strong>Підтримка</strong> (26.10.2012: 15:39):
-                    </div>
-                    <div class="message">Перезапустіть ваш утюг... Повинно допомогти :)</div>
-                </div>                        
-                <textarea name="text" class="message-input">Перезапустив, допомогло, дякую.</textarea>
-                <div class="support-window__footer">
-                    <img src="" alt="">
-                    <a href="">вкласти файл</a>
 
-                    <button class="button-send">надіслати</button>                    
-                </div>
-            </div>
-        </div>
+                <div class="support-window__content__chat">
+                    <div class="support-window__content__chat__history">
+                        <div class="message-support">
+                            <div class="message-support__header">
+                                <strong>Підтримка</strong> (26.10.2012: 15:35):
+                            </div>
+                            <div class="message-text">Доброго дня, чим можу допомогти?</div>
+                        </div>
+                        <div class="message-user">
+                            <div class="message-user__header">
+                                <strong>Ви</strong> (26.10.2012: 15:36):
+                            </div>                                                        
+                            <div class="message-text">У мене не працює утюг. Чи зв’язано це з тим, що на Марсі погана погода?</div>
+                            <a href="#" class="include-file">погода.doc</a>
+                        </div>
+                        <div class="message-support">
+                            <div class="message-support__header">
+                                <strong>Підтримка</strong> (26.10.2012: 15:39):
+                            </div>
+                            <div class="message-text">Перезапустіть ваш утюг... Повинно допомогти :)</div>
+                        </div>
+                    </div> <!-- end of support-window__content__chat__history -->
+                    <div class="support-window__content__chat__input">                       
+                        <textarea name="text" class="message-input">Перезапустив, допомогло, дякую.</textarea>
+                    </div> <!-- end of "support-window__content__chat__input -->
+                    <div class="support-window__content__chat__footer">
+                        <img src="img/clip.gif">
+                        <a href="">вкласти файл</a>
+                        <input type="file" class="file-input">
+                        <button class="button-send">надіслати</button>
+                    </div> <!-- end of support-window__content__chat__footer -->                    
+                </div> <!-- end of support-window__content__chat --> 
+            </div> <!-- end of support-window__content -->
+        </div> <!-- end of support-window -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>

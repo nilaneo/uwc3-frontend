@@ -93,6 +93,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   
+   /* Suport button
+    ========================================================================== */
+
 .support-button {
     position: fixed;
     top: 75px;
@@ -146,11 +150,14 @@ textarea {
     transform:rotate(-90deg);
 }
 
+/* Support window
+    ========================================================================== */
+
 .support-window {
     position: fixed;
     top: 50%;
     left: 50%;
-    display: none;
+    /*display: none;*/
     width: 440px;
     height: 440px;
     margin-top: -220px;
@@ -165,9 +172,10 @@ textarea {
     background-image: -ms-linear-gradient(#a2cf0e, #3f9200 8%, transparent 92%, #5da502);
 }
 
+
 .support-window:after {
     position: absolute;
-    top: 440px; 
+    bottom: -20px; 
     left: 390px;       
     display: block;
     height: 0;
@@ -179,7 +187,7 @@ textarea {
     content: '';  
 }
 
-.support-window__header {
+.support-window__header__title {
     margin: 5px 0 10px 10px;
     color: #fff;
     font-size: 14px;
@@ -193,12 +201,86 @@ textarea {
 .support-window__content {
     width: 430px;
     height: 380px;    
-    margin-left: 5px;
+    margin-left: 5px;    
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #fff;
 }
+
+    /* Chatting
+    ========================================================================== */
+
+.support-window__content__chat {
+    padding: 10px;
+}
+
+.support-window__content__chat__history {
+    overflow: auto;
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+.support-window__content__chat__input {
+    margin-bottom: 10px;
+}
+
+.support-window__content__chat__footer a {
+    display: inline-block;
+    padding-left: 0;
+    border-bottom: 1px dotted;
+    margin-right: 12px;
+    margin-top: 10px;
+    background: none repeat scroll 0 0 transparent;
+    color: #397da8;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.message-support__header {
+    color: #3f9200;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+.message-user__header {
+    color: #7a7e80;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+.message-support,
+.message-user {
+    margin-bottom: 10px;
+    font: 14px Arial, sans-serif;
+}
+
+.include-file {
+    padding-left: 22px;
+    background: url("../img/clip.gif") no-repeat;
+    color: #1A699B;
+    font: 13px Arial;
+    text-decoration: underline;
+}
+
+.file-input {
+    margin-left: -9999px;
+    opacity: 0;
+}
+
+.message-input {
+    overflow: hidden;
+    width: 392px;
+    height: 64px;
+    resize: none;
+    padding: 8px;    
+    font: 14px/20px Arial;
+    outline: 0;
+}
+
+/* Chatting buttons
+    ========================================================================== */
 
 .button-close {
     position: absolute;
@@ -220,6 +302,7 @@ textarea {
     background: -o-linear-gradient(top, #99c90d, #469701); 
     background: -ms-linear-gradient(top, #99c90d, #469701); 
     background: linear-gradient(top, #99c90d, #469701);
+    background-image: url(../img/close.gif) no-repeat;
     color: #fff;
     font-size: 12px;    
 }
@@ -234,20 +317,10 @@ textarea {
     background: linear-gradient(top, #bae013, #65b803);
 }
 
-.message-input {
-    overflow: hidden;
-    width: 392px;
-    height: 64px;
-    resize: none;
-    padding: 8px;
-    margin: 70px 10px 0 10px;
-    font: 14px/20px Arial;
-    outline: 0;
-}
 
 .button-send {
     position: absolute;
-    right: 12px;
+    right: 15px;
     bottom: 35px;
     width: 110px;
     height: 32px;
@@ -263,7 +336,7 @@ textarea {
     background: -o-linear-gradient(top, #f2f2f2, #d3d3d3); 
     background: -ms-linear-gradient(top, #f2f2f2, #d3d3d3); 
     background: linear-gradient(top, #f2f2f2, #d3d3d3);
-    
+    font-size: 14px;    
 }
 
 
