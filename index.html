@@ -30,8 +30,8 @@
 
         <div class="support-window">
             <div class="support-window__header">
-                <h1 class="support-window__header__title"><img src="img/tip.gif">Технічна підтримка слухає...</h1>
-                <button class="button-close">завершити чат</button>
+                <h1 class="support-window__header__title"><img src="img/tip.gif"><span class="title-text">Технічна підтримка слухає...</span></h1>
+                <button class="button-close"><span class="cross-mark">❌</span> завершити чат</button>
             </div>
             <div class="support-window__content">
 
@@ -62,11 +62,19 @@
                     </div> <!-- end of "support-window__content__chat__input -->
                     <div class="support-window__content__chat__footer">
                         <img src="img/clip.gif">
-                        <a href="">вкласти файл</a>
-                        <input type="file" class="file-input">
+                        <a href="" class="adding-files">вкласти файл</a>                        
+                        <a href="#" class="nested-file">утюг.png <span class="icon-close">❌</span></a>                                                
                         <button class="button-send">надіслати</button>
                     </div> <!-- end of support-window__content__chat__footer -->                    
                 </div> <!-- end of support-window__content__chat --> 
+
+                <div class="support-window__content__sending-email">
+                    <p>Надіслати копію чату собі на пошту</p>
+                    <div class="email">
+                        <input type="text" placeholder="Адреса електронної пошти" class="input-email">
+                        <button class="button-send">надіслати</button>
+                    </div>
+                </div>
             </div> <!-- end of support-window__content -->
         </div> <!-- end of support-window -->
 
