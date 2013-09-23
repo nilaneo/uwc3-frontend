@@ -324,6 +324,7 @@ html {
 }
 
 .input-email {
+    float: left;
     width: 264px;
     height: 30px;
     padding: 0 5px;
@@ -370,7 +371,8 @@ html {
     background: linear-gradient(top, #bae013, #65b803);
 }
 
-.button-send {
+.button-send {    
+    /* display: inline; */
     float: right;
     width: 110px;
     height: 32px;
@@ -398,6 +400,10 @@ html {
     background: -o-linear-gradient(top, #f7f7f7 50%, #ededed 50%); 
     background: -ms-linear-gradient(top, #f7f7f7 50%, #ededed 50%); 
     background: linear-gradient(top, #f7f7f7 50%, #ededed 50%);    
+}
+
+.button-send-email {
+    float: none;
 }
 
 /* ==========================================================================
